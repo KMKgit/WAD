@@ -4,14 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="res/images/favicon.ico">
+    <link rel="stylesheet" href="res/css/style.css">
     <title>My Dashboard</title>
   </head>
   <body>
+    <p class="static">This is a static paragraph</p>
+
+  <p class="relative">This is a relative paragraph</p>
+
+  <static class ="parentpositioning">
+    <p class ="absolute">This is an absolute paragraph</p>
+  </static>
+
+  <p class ="fixed">This is a fixed paragraph</p>
+
+  <p class ="sticky">This is a sticky paragraph</p>
 	<header>
     	<strong>Welcome to your dashboard!</strong>
 	</header>
 
-	<section>
+	<section class="header">
         <h4>Have a look!</h4>
     <div>
         <img src="res/images/me.png" width="128" height="128" alt="My picture">
@@ -27,8 +39,7 @@
         <strong>2.65</strong>
     </div>
 </section>
-
-<section>
+<section class="header">
     <h1>Courses</h1>
     <table>
         <thead>
@@ -75,7 +86,7 @@
           </tfoot>
     </table>
 </section>
-<section>
+<section class="header">
     <h1>Add courses</h1>
     <form>
         <label for="ctitle">Course title:</label><br>
