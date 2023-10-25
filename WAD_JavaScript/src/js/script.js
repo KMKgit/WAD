@@ -45,8 +45,46 @@ function code(n) {
 console.log(code(121));
 
 function compareVariables(var1, var2) {
+    if(var1 === var2){
+        console.log("The two variables have the same value and type");
+    } else if(var1 == var2 && typeof(var1) != typeof(var2)){
+        console.log("The two variables have the same value but not the same type");
+        console.log("The type of var1 is " + typeof(var1));
+        console.log("The type of var2 is " + typeof(var2));
+    } else{
+        console.log("The two variables do not have the same value nor the same type");
+
+    }
 }
 
 // After completing the function pass different values instead of var1 and var2 to test your function
 
-compareVariables (var1, var2);
+compareVariables (1, 2);
+compareVariables (1, 1);
+compareVariables (1, "1");
+compareVariables (1, 'c');
+
+function fibonacci(n) {
+    var first = 0;
+    var second = 0;
+    var sum = 0;
+    var count = 1;
+
+    console.log("Fibonacci Sequence: ")
+    while (n >= count) {
+        console.log(sum);
+        if(count == 1){
+            second = 1;
+            count += 1;
+            continue
+        }
+        sum = first + second;
+        second = first;
+        first = sum;
+        count += 1;
+    }
+}
+
+// After completing the function pass different numbers instead of n and test the result.
+
+fibonacci(7);
