@@ -32,7 +32,7 @@ window.onload = function() {
                 parentDiv.appendChild(postDiv);
 
             });
-            document.body.appendChild(parentDiv)<
+            document.body.appendChild(parentDiv);
             console.log(json);
 
         })
