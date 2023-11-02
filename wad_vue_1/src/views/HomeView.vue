@@ -17,6 +17,7 @@
 <style>
   h1 {
     color: #3c23cd;
+    font-family: "Dubai Light";
   }
 
   .add-task {
